@@ -16,7 +16,7 @@ To test agent with our trained weights: python test_model.py saved_model/475.0.h
 #### Output of agent taking random actions
 ![Episode: 0](demo/cartpole-v1_random.gif)
 
-#### Output of agent at Episode: 100 with score 475.0
+#### Output of our agent at Episode: 100 with score 475.0
 ![Episode: 100, Score:475.0](demo/cartpole-v1_our.gif)
 
 
