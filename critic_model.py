@@ -9,7 +9,7 @@ tf.set_random_seed(2212)
 
 class Critic:
     def __init__(self, sess, action_dim, observation_dim):
-        # setting the our created session as default session
+        # setting our created session as default session
         K.set_session(sess)
         self.sess = sess
         self.action_dim = action_dim
