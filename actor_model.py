@@ -9,7 +9,7 @@ tf.set_random_seed(2212)
 
 class Actor:
     def __init__(self, sess, action_dim, observation_dim):
-        # setting the our created session as default session
+        # setting our created session as default session
         self.sess = sess
         K.set_session(sess)
         self.action_dim = action_dim
@@ -18,7 +18,7 @@ class Actor:
         model_weights = self.model.trainable_weights
         # Placeholder for critic gradients with respect to action_input.
         self.actor_critic_grads = tf.placeholder(tf.float32, [None, action_dim])
-        # Adding small number to log to avoid log(0) = -infinity
+        # Adding small number inside log to avoid log(0) = -infinity
         log_prob = tf.math.log(self.output + 10e-10)
         # Multiply log by -1 to convert the optimization problem as minimization problem.
         # This step is essential because apply_gradients always do minimization.
