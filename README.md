@@ -6,9 +6,9 @@ CartPole-v1 is an environment presented by OpenAI Gym. In this repository we hav
 python train_model.py
 
 #### To test the model
-python test_model.py 'path_of_saved_model_weights' (without quotes)
+<code>python test_model.py 'path_of_saved_model_weights'</code> (without quotes)
 
-To test agent with our trained weights: python test_model.py saved_model/475.0.h5
+To test agent with our trained weights: <code>python test_model.py saved_model/475.0.h5</code>
 
 
 ### Results
