@@ -17,11 +17,13 @@ CartPole-v1 is an environment presented by OpenAI Gym. In this repository we hav
 
 ### Results
 
-#### Output of agent taking random actions
-![Episode: 0](demo/cartpole-v1_random.gif)
+ * **Output of agent taking random actions**
 
-#### Output of our agent at Episode: 100 with score 475.0
-![Episode: 100, Score:475.0](demo/cartpole-v1_our.gif)
+      ![Episode: 0](demo/cartpole-v1_random.gif)
+
+ * **Output of our agent at Episode: 100 with score 475.0**
+ 
+      ![Episode: 100, Score:475.0](demo/cartpole-v1_our.gif)
 
 
 ### References
