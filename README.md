@@ -1,5 +1,5 @@
 # CartPole-v1 Actor Critic
-CartPole-v1 is an environment presented by OpenAI Gym. In this repository we have used Actor Critic algorithm [1] for building an agent to solve this environment.
+CartPole-v1 is an environment presented by OpenAI Gym. In this repository we have implemented Actor Critic algorithm [1] in Keras for building an agent to solve this CartPole-v1 enviroment.
 
 ### Commands to run
   * **To train the model**
