@@ -78,10 +78,10 @@ def train_actor_critic(replay_memory, actor, critic):
     # Get the actions for the cur_states from the minibatch.
     # We are doing this because now actor may have learnt more optimal actions for given states
     # as Actor is constantly learning and we are picking the states from the previous experiences.
-    X_actions_new = []
-    for sample in minibatch:
-        X_actions_new.append(actor.model.predict(np.expand_dims(sample[0], axis=0))[0])
-    X_actions_new = np.array(X_actions_new)
+    #X_actions_new = []
+    #for sample in minibatch:
+    #    X_actions_new.append(actor.model.predict(np.expand_dims(sample[0], axis=0))[0])
+    #X_actions_new = np.array(X_actions_new)
 
     # grad(J(actor_weights)) = sum[ grad(log(pi(at | st, actor_weights)) * grad(critic_output, action_input), actor_weights) ]
     critic_gradients_val = critic.get_critic_gradients(X_states, X_actions)
